@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Virtual Exhibition</title>
+    <title>Art Collections</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,19 +25,6 @@
 
         .sub-menu-wrap.open-menu {
             max-height: 400px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding-top: 5rem;
-                padding-bottom: 2rem;
-                /* Sesuaikan dengan jarak yang diinginkan */
-            }
-
-            .card {
-                margin-bottom: 1rem;
-            }
-
         }
     </style>
 </head>
@@ -62,10 +49,10 @@
             <!-- Navbar Items and Profile Menu for Desktop -->
             <div class="hidden w-full md:flex md:items-center md:w-auto justify-end" id="navbarText">
                 <ul class="flex flex-col md:flex-row md:space-x-4">
-                    <li><a href="#" class="block text-white px-3 py-2">Home</a></li>
-                    <li><a href="exhibit.html" class="block text-white px-3 py-2">Exhibit</a></li>
+                    <li><a href="home.html" class="block text-white px-3 py-2">Home</a></li>
+                    <li><a href="artcollection.html" class="block text-white px-3 py-2">Art Collection</a></li>
                     <li><a href="artist.html" class="block text-white px-3 py-2">Artist</a></li>
-                    <li><a href="#" class="block text-white px-3 py-2">About Us</a></li>
+                    <li><a href="aboutus.html" class="block text-white px-3 py-2">About Us</a></li>
                 </ul>
                 <!-- Start Profile Menu -->
                 <div class="relative ml-4 hidden md:block">
@@ -106,96 +93,41 @@
         </div>
     </nav>
 
-
-    <!-- Start Description Exhibit  -->
-
-    <div class="desc mt-10 flex flex-col items-center justify-center mx-auto">
-        <p class="text-xl md:text-2xl font-semibold text-[#0B60B0]  ">Exhibiton</p>
-        <p class="text-slate-600 text-md font-normal">"Discover new perspectives at an art exhibition."</p>
-    </div>
-
-    <!-- End Description Exhibit -->
-
-
-
-    <!-- Start Section Exhibit -->
-    <div class="flex items-center justify-center min-h-screen container mx-auto">
-        <!-- Start Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-
-            <!-- Start Cards -->
-            <!-- Start Card 1 -->
-            <div class="card bg-white rounded-xl shadow-lg flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <div class="rounded-xl overflow-hidden flex justify-center items-center h-48">
-                        <img src="../src/css/img/scandi.jpg" alt="" class="object-cover h-full">
-                    </div>
-                    <h5 class="text-xl md:text-2xl font-medium mt-3">Scandinavian Talks</h5>
-                    <p class="text-slate-500 text-md mb-3 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Nostrum ducimus fuga accusantium ipsam eum eligendi.</p>
-                    <a href="#"
-                        class="text-center bg-blue-400 text-blue-700 py-2 rounded-lg font-semibold mt-auto hover:bg-blue-300 focus:sclae-95 transition-all duration-200 ease-out">View
-                        More</a>
-                </div>
-            </div>
-            <!-- End Card 1 -->
-
-            <!-- Start Card 2 -->
-            <div class="card bg-white rounded-xl shadow-lg flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <div class="rounded-xl overflow-hidden flex justify-center items-center h-48">
-                        <img src="../src/css/img/streetpave.jpg" alt="" class="object-cover h-full">
-                    </div>
-                    <h5 class="text-xl md:text-2xl font-medium mt-3">The Street Pavements</h5>
-                    <p class="text-slate-500 text-md mb-3 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Nostrum ducimus fuga accusantium ipsam eum eligendi.</p>
-                    <a href="#"
-                        class="text-center bg-blue-400 text-blue-700 py-2 rounded-lg font-semibold mt-auto hover:bg-blue-300 focus:sclae-95 transition-all duration-200 ease-out">View
-                        More</a>
-                </div>
-            </div>
-            <!-- End Card 2 -->
-
-            <!-- Start Card 3 -->
-            <div class="card bg-white rounded-xl shadow-lg flex flex-col">
-                <div class="p-5 flex flex-col flex-1">
-                    <div class="rounded-xl overflow-hidden flex justify-center items-center h-48">
-                        <img src="../src/css/img/showtime.jpg" alt="" class="object-cover h-full">
-                    </div>
-                    <h5 class="text-lg md:text-xl font-medium mt-3">La Berceuses</h5>
-                    <p class="text-slate-500 text-md mb-3 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Nostrum ducimus fuga accusantium ipsam eum eligendi.</p>
-                    <a href="#"
-                        class="text-center bg-blue-400 text-blue-700 py-2 rounded-lg font-semibold mt-auto hover:bg-blue-300 focus:sclae-95 transition-all duration-200 ease-out">View
-                        More</a>
-                </div>
-            </div>
-            <!-- End Card 3 -->
-
-            <!-- End Cards Section -->
+    <!-- Start Desc Art Collections -->
+    <div class="container mx-auto flex justify-center items-center max-w-screen-xl">
+        <div class="desc-art my-4 flex flex-col justify-center items-center">
+            <h1 class="text-3xl font-semibold my-2 text-center">Nirmana 3D</h1>
+            <p class="my-4 font-normal">
+                Karya seni nirmana 3D adalah bentuk eksplorasi seni rupa yang menekankan pada aspek visual dan estetik
+                melalui penggunaan elemen-elemen tiga dimensi. Menurut jurnal-jurnal seni rupa, nirmana 3D bertujuan
+                untuk menciptakan komposisi yang harmonis antara berbagai elemen seperti bentuk, ruang, tekstur, dan
+                warna, yang dihadirkan dalam format tiga dimensi. Karya-karya ini sering kali menekankan prinsip-prinsip
+                dasar desain, seperti keseimbangan, ritme, kesatuan, kontras, dan proporsi, yang semuanya berkontribusi
+                pada pengalaman visual yang kaya dan dinamis bagi penikmatnya.
+            </p>
+            <img src="../src/css/img/nirmana.jpg" alt="" class="my-4 w-full h-auto">
         </div>
-        <!-- End Grid -->
+
     </div>
-    <!-- End Section Exhibit -->
 
+    <!-- End Desc Art Collections -->
 
-
-
-
-
-
-
-
+    <!-- Start Back button -->
+    <button
+        class="p-3 rounded-xl bg-[#0B60B0] mb-4 mx-16 text-white hover:bg-blue-300 focus:scale-95 transition-all duration-200 ease-in-out"
+        onclick="window.history.back()">Back</button>
+    <!-- End back button  -->
 
 
     <!-- Start Template Section  -->
 
-    <footer class="bg-[#0B60B0] py-4 w-full">
+    <footer class="bg-[#0B60B0]  py-6 bottom-0 w-full">
         <div class="container mx-auto px-2 flex justify-center">
             <p class="text-base text-white ">&copy; 2024 - ExhibitArt</p>
         </div>
     </footer>
     <!-- End Template Section -->
+
 
 
     <!-- Start Navbar Toggle Section  -->
