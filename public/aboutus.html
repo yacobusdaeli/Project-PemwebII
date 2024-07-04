@@ -4,11 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Art Collections</title>
+    <title>Navbar Template</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -68,8 +71,7 @@
                             </div>
                             <hr class="my-2 border-gray-300">
                             <!-- Start Sub Menu Link  -->
-                            <a href="profilepage.html"
-                                class="flex items-center py-2 text-gray-700 hover:text-black sub-menu-link">
+                            <a href="#" class="flex items-center py-2 text-gray-700 hover:text-black sub-menu-link">
                                 <img src="../src/css/img/profile.png" class="h-10 w-10 rounded-full bg-gray-200 mr-4">
                                 <p class="mb-0 flex-grow">Edit Profile</p>
                                 <span class="text-xl transition-transform duration-500">&gt;</span>
@@ -95,35 +97,66 @@
         </div>
     </nav>
 
-    <!-- Start Desc Art Collections -->
-    <div class="container mx-auto flex justify-center items-center max-w-screen-xl">
-        <div class="desc-art my-4 flex flex-col justify-center items-center">
-            <h1 class="text-3xl font-semibold my-2 text-center">Nirmana 3D</h1>
-            <p class="my-4 font-normal">
-                Karya seni nirmana 3D adalah bentuk eksplorasi seni rupa yang menekankan pada aspek visual dan estetik
-                melalui penggunaan elemen-elemen tiga dimensi. Menurut jurnal-jurnal seni rupa, nirmana 3D bertujuan
-                untuk menciptakan komposisi yang harmonis antara berbagai elemen seperti bentuk, ruang, tekstur, dan
-                warna, yang dihadirkan dalam format tiga dimensi. Karya-karya ini sering kali menekankan prinsip-prinsip
-                dasar desain, seperti keseimbangan, ritme, kesatuan, kontras, dan proporsi, yang semuanya berkontribusi
-                pada pengalaman visual yang kaya dan dinamis bagi penikmatnya.
-            </p>
-            <img src="../src/css/img/nirmana.jpg" alt="" class="my-4 w-full h-auto">
+    <!-- Start About Us Section -->
+    <main class="max-w-6xl mx-auto p-4">
+        <h2 class="text-2xl font-semibold mb-4 d-flex items-center text-center">About Us</h2>
+        <p class="mb-4">
+            Art Exhibition is proud to present our virtual art gallery called Art Exhibition. We are excited to
+            share the artwork produced by Indonesian artists with all Indonesians and visitors from around the
+            world, bringing together beautiful stories and narratives.
+        </p>
+        <div class="aboutus-container bg-gray-100 p-10">
+            <div class="columns-3 grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
+                <div>
+                    <i class="fa-solid fa-location-dot text-4xl text-slate-700"></i>
+                    <p class="mt-2 text-lg font-semibold">Purbalingga</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone text-4xl text-slate-700"></i>
+                    <p class="mt-2 text-lg font-semibold">+(62) 875-5713-2739</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope text-4xl text-slate-700"></i>
+                    <p class="mt-2 text-lg font-semibold">artexhibition@gmail.com</p>
+                </div>
+            </div>
         </div>
 
-    </div>
 
-    <!-- End Desc Art Collections -->
-
-    <!-- Start Back button -->
-    <button
-        class="p-3 rounded-xl bg-[#0B60B0] mb-4 mx-16 text-white hover:bg-blue-300 focus:scale-95 transition-all duration-200 ease-in-out"
-        onclick="window.history.back()">Back</button>
-    <!-- End back button  -->
-
+        <!-- End About Us Section  -->
+        <section class="bg-white shadow-md rounded p-6 mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+            <form action="#" method="post">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-500"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-500"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-500"
+                        rows="4" required></textarea>
+                </div>
+                <div class="text-right">
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-500">Send
+                        Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
     <!-- Start Template Section  -->
 
-    <footer class="bg-[#0B60B0]  py-6 bottom-0 w-full">
+    <footer class="bg-[#0B60B0]  py-6 mt-8 w-full">
         <div class="container mx-auto px-2 flex justify-center">
             <p class="text-base text-white ">&copy; 2024 - ExhibitArt</p>
         </div>
